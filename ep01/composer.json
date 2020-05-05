@@ -1,0 +1,28 @@
+{
+  "name": "bmota2309/phptips001",
+  "description": "conhecendo o composer e configurando o IDE | PHP Tips #001",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bruno Mota",
+      "email": "brunomottta@terra.com.br",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Config.php"
+    ]
+  },
+  "require": {
+    "phpmailer/phpmailer": "6.0.*"
+  }
+}
