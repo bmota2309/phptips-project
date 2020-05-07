@@ -9,8 +9,7 @@ class User extends DataLayer
 {
 public function __construct()
 {
-    $teste= parent::__construct("users",["first_name,last_name"]);
-    var_dump($teste);
+   parent::__construct("users",["first_name,last_name"]);
 }
 
 public function addresses()
