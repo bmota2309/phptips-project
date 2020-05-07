@@ -1,7 +1,7 @@
 <?php
 
 
-namespace source\Models;
+namespace Source\Models;
 
 
 use CoffeeCode\DataLayer\DataLayer;
