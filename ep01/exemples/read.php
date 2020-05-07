@@ -13,17 +13,16 @@ require __DIR__."/../vendor/autoload.php";
 //$query = $conn->query("select * from users");
 //var_dump($query->fetchAll());
 echo "<pre>";
+
 use Source\Models\User;
 
 $user = new User();
 $list = $user->find()->fetch(true);
 
 /** @var  $userItem User */
-foreach ($list as $userItem)
-{
+foreach ($list as $userItem){
     var_dump($userItem->data());
     foreach($userItem->addresses() as $address){
         var_dump($address->data());
+    }
 }
-}
-
