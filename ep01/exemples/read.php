@@ -16,6 +16,7 @@ echo "<pre>";
 
 use Source\Models\User;
 
+
 $user = new User();
 $list = $user->find()->fetch(true);
 
@@ -25,4 +26,5 @@ foreach ($list as $userItem){
     foreach($userItem->addresses() as $address){
         var_dump($address->data());
     }
+
 }
